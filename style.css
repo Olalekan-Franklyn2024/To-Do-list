@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    padding:40px;
+}
+
+.container{
+    width:900px;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.controls{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input{
+    padding:15px;
+    border:2px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+/* Individual button styles */
+#addLastBtn{
+    background:#2563eb;
+}
+
+#addFirstBtn{
+    background:#16a34a;
+}
+
+#removeFirstBtn{
+    background:#d97706;
+}
+
+#removeLastBtn{
+    background:#ea580c;
+}
+
+#countBtn{
+    background:#7c3aed;
+}
+
+#clearBtn{
+    background:#dc2626;
+}
+
+.buttons button{
+    color:white;
+    border:none;
+    padding:12px 18px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.buttons button:hover{
+    transform:translateY(-3px);
+}
+
+ul{
+    margin-top:25px;
+    list-style:none;
+}
+
+li{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px;
+    margin-bottom:10px;
+    background:#f8fafc;
+    border-left:5px solid #2563eb;
+    border-radius:10px;
+}
+
+.task-actions{
+    display:flex;
+    gap:10px;
+}
+
+.replace-btn{
+    background:#facc15;
+    color:black;
+}
+
+.remove-btn{
+    background:#ef4444;
+    color:white;
+}
+
+.task-actions button{
+    border:none;
+    padding:8px 12px;
+    border-radius:8px;
+    cursor:pointer;
+}
